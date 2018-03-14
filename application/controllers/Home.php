@@ -43,6 +43,12 @@ class Home extends CI_Controller
     $this->myModel->delete_user($id);
   }
 
+  public function index()
+  {
+    $data['main_view'] = 'new_view';
+    $this->load->view('layouts/main',$data);
+  }
+
 
 }
 
